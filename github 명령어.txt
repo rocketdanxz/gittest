@@ -1,0 +1,59 @@
+1)git config (git user 정보 입력,commit 할때 정보제공합니다)
+git config --global user.name "이름"
+git config --global user.email "이메일주소"
+
+2)git init
+원하는 경로에서 git init 명령어를 친다 (.git라는 숨겨진디렉토리생성)
+
+git 저장소를 더이상 사용하지 않을시는 rm -rf .git 를 사용한다.
+
+3)git status
+현재 저장소에 대한 정보를 볼수있다
+현재 저장소에 추가되지않은 폴더및 파일을 알려준다.
+git add . 이렇게 하면 추가되지  않은 폴더 및 파일을 모두 추가한다.
+
+4)git clone
+새로운 폴더를 init하여 저장소로 사용하거나.
+원격의 저장소의 자료를 가져올수있다.
+git clone git://github.com/rocketdanxz/gittest.git
+또는 git clone 사용자명@호스트:/원격/저장소/경로
+
+5)git log
+언제 누가 커밋햇는지 커밋로그를 확인할 수 있다(q를눌러 빠져나올수있다.)
+
+
+6)git diff
+git diff 해시코드
+명령어를 통해 변경된 곳을 비교해서 볼 수 있다.
+
+
+
+
+Create a new repository on the command line(repository 생성)
+예)README.md 파일 외부저장
+git init(원하는 경로에서 master 등록)
+git add README.md (등록하고자하는 폴더및 파일 ADD)
+git commit -m "first commit"(파일이나 폴더 ADD 후 커밋)
+git remote add origin https://github.com/rocketdanxz/tra.git(ADD한 폴더및 파일을 외부저장소로 ADD)
+git push -u origin master(ADD한 내용을 PUSH한다)
+
+Push an existing repository from the command line
+git remote add origin https://github.com/rocketdanxz/tra.git
+git push -u origin master
+
+
+ remote origin already exists.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
